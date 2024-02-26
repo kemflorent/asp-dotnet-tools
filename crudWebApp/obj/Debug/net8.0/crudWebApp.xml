@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>crudWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:UserController.DeleteUser(System.Int32)">
+            <summary>
+            Deletes a specific user
+            </summary>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="T:crudWebApp.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:crudWebApp.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:crudWebApp.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:crudWebApp.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:crudWebApp.Migrations.AddRoleToUserTable">
+            <inheritdoc />
+        </member>
+        <member name="M:crudWebApp.Migrations.AddRoleToUserTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:crudWebApp.Migrations.AddRoleToUserTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:crudWebApp.Migrations.AddRoleToUserTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

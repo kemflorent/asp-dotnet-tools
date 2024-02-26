@@ -1,0 +1,1 @@
+2024-01-19T08:53:06.1348120+01:00  [INF] Application is shutting down... (90f52c38)

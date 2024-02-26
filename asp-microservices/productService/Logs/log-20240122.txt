@@ -1,0 +1,2 @@
+2024-01-22T10:14:41.6436500+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-22T10:14:41.6455430+01:00  [INF] Deregistering from Consul (a9469139)

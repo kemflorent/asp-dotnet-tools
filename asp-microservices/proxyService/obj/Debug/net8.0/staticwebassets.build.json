@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hw6CKo8lYCcwixVZkty3YpLXUuFz6CJM7jy3v2iRrBs=",
+  "Source": "proxyService",
+  "BasePath": "_content/proxyService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

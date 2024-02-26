@@ -1,0 +1,47 @@
+2024-01-20T19:40:21.9020680+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T19:40:21.9912070+01:00  [INF] Now listening on: "https://localhost:8083" (d826f4b8)
+2024-01-20T19:40:21.9916980+01:00  [INF] Now listening on: "http://localhost:8082" (d826f4b8)
+2024-01-20T19:40:22.0000430+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T19:40:22.0027210+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T19:40:22.0030950+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/orderService" (cc26f24e)
+2024-01-20T23:17:03.5405130+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T23:19:58.3206560+01:00  [INF] Executed DbCommand ("125"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:19:58.6221960+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:19:59.5498970+01:00  [INF] Executed DbCommand ("519"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"__EFMigrationsHistory\" (
+    \"MigrationId\" character varying(150) NOT NULL,
+    \"ProductVersion\" character varying(32) NOT NULL,
+    CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY (\"MigrationId\")
+);" (0723d8ff)
+2024-01-20T23:19:59.5668500+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:19:59.5729390+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:19:59.6052960+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:19:59.8615240+01:00  [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-01-20T23:20:01.3075780+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T23:20:01.3432740+01:00  [INF] Now listening on: "https://localhost:8083" (d826f4b8)
+2024-01-20T23:20:01.3435370+01:00  [INF] Now listening on: "http://localhost:8082" (d826f4b8)
+2024-01-20T23:20:01.3505630+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T23:20:01.3509490+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T23:20:01.3510700+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/orderService" (cc26f24e)
+2024-01-20T23:29:09.9221050+01:00  [INF] Application is shutting down... (90f52c38)

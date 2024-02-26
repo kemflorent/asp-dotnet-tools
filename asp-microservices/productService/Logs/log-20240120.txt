@@ -1,0 +1,911 @@
+2024-01-20T19:39:01.7412840+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T19:39:01.8162900+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T19:39:01.8212940+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T19:39:01.8298930+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T19:39:01.8304540+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T19:39:01.8305500+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T20:13:33.3333340+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T22:04:36.8220080+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T22:04:36.9103630+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T22:04:36.9107090+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T22:04:36.9267690+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T22:04:36.9275080+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T22:04:36.9277310+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T22:07:52.0718660+01:00 0HN0PVF7592N7:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger""" - null null (d509f86a)
+2024-01-20T22:07:53.7734510+01:00 0HN0PVF7592N7:0000000F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.IO.FileNotFoundException: Could not find file '/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService/bin/Debug/net8.0/productService.xml'.
+File name: '/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService/bin/Debug/net8.0/productService.xml'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at Program.<>c.<<Main>$>b__0_1(SwaggerGenOptions options) in /Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService/Program.cs:line 47
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method3(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-20T22:07:54.0934360+01:00 0HN0PVF7592N7:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger""" - 500 null "text/html; charset=utf-8" 2033.8431ms (74253ad3)
+2024-01-20T22:07:56.1208070+01:00 0HN0PVF7592N7:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/favicon.ico""" - null null (d509f86a)
+2024-01-20T22:07:56.1250130+01:00 0HN0PVF7592N7:00000011 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.IO.FileNotFoundException: Could not find file '/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService/bin/Debug/net8.0/productService.xml'.
+File name: '/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService/bin/Debug/net8.0/productService.xml'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at Program.<>c.<<Main>$>b__0_1(SwaggerGenOptions options) in /Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService/Program.cs:line 47
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at InvokeStub_ConfigureSwaggerGeneratorOptions..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method3(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-20T22:07:56.1881600+01:00 0HN0PVF7592N7:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/favicon.ico""" - 500 null "text/plain; charset=utf-8" 67.1211ms (74253ad3)
+2024-01-20T22:09:32.8619530+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T22:09:47.0376090+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T22:09:47.1175480+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T22:09:47.1181320+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T22:09:47.1273360+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T22:09:47.1280330+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T22:09:47.1281880+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T22:09:52.0911100+01:00 0HN0PVGIC65VN:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger""" - null null (d509f86a)
+2024-01-20T22:09:52.3038960+01:00 0HN0PVGIC65VN:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger""" - 301 0 null 213.6429ms (74253ad3)
+2024-01-20T22:09:52.4162440+01:00 0HN0PVGIC65VN:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - null null (d509f86a)
+2024-01-20T22:09:52.6378940+01:00 0HN0PVGIC65VN:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 234.7882ms (74253ad3)
+2024-01-20T22:09:52.9507650+01:00 0HN0PVGIC65VN:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui.css""" - null null (d509f86a)
+2024-01-20T22:09:52.9511780+01:00 0HN0PVGIC65VN:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-bundle.js""" - null null (d509f86a)
+2024-01-20T22:09:52.9542030+01:00 0HN0PVGIC65VN:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-standalone-preset.js""" - null null (d509f86a)
+2024-01-20T22:09:53.9073140+01:00 0HN0PVGIC65VN:00000013 [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2024-01-20T22:09:53.9078330+01:00 0HN0PVGIC65VN:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui.css""" - 200 144929 "text/css" 957.0642ms (74253ad3)
+2024-01-20T22:09:54.3071040+01:00 0HN0PVGIC65VN:00000017 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2024-01-20T22:09:54.3081270+01:00 0HN0PVGIC65VN:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-standalone-preset.js""" - 200 312163 "text/javascript" 1353.1774ms (74253ad3)
+2024-01-20T22:09:54.5425090+01:00 0HN0PVGIC65VO:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-standalone-preset.js""" - null null (d509f86a)
+2024-01-20T22:09:54.5464730+01:00 0HN0PVGIC65VO:0000000F [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2024-01-20T22:09:54.5466490+01:00 0HN0PVGIC65VO:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-standalone-preset.js""" - 200 312163 "text/javascript" 4.0894ms (74253ad3)
+2024-01-20T22:09:55.0096690+01:00 0HN0PVGIC65VN:00000015 [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2024-01-20T22:09:55.0099260+01:00 0HN0PVGIC65VN:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-bundle.js""" - 200 1061536 "text/javascript" 2058.7069ms (74253ad3)
+2024-01-20T22:09:55.0282170+01:00 0HN0PVGIC65VO:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-bundle.js""" - null null (d509f86a)
+2024-01-20T22:09:55.0406220+01:00 0HN0PVGIC65VO:00000011 [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2024-01-20T22:09:55.0408200+01:00 0HN0PVGIC65VO:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/swagger-ui-bundle.js""" - 200 1061536 "text/javascript" 12.5464ms (74253ad3)
+2024-01-20T22:09:55.6209100+01:00 0HN0PVGIC65VN:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/favicon-16x16.png""" - null null (d509f86a)
+2024-01-20T22:09:55.6213410+01:00 0HN0PVGIC65VN:00000019 [INF] Sending file. Request path: '"/favicon-16x16.png"'. Physical path: '"N/A"' (27b0a520)
+2024-01-20T22:09:55.6214660+01:00 0HN0PVGIC65VN:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/favicon-16x16.png""" - 200 665 "image/png" 0.5561ms (74253ad3)
+2024-01-20T22:10:06.1860550+01:00 0HN0PVGIC65VN:0000001B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-20T22:10:15.6665640+01:00 0HN0PVGIC65VN:0000001B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9480.3982ms (74253ad3)
+2024-01-20T22:12:17.3370800+01:00 0HN0PVGIC65VN:0000001D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - null null (d509f86a)
+2024-01-20T22:12:17.3378420+01:00 0HN0PVGIC65VN:0000001D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - 404 0 null 0.702ms (74253ad3)
+2024-01-20T22:12:17.3862160+01:00 0HN0PVGIC65VN:0000001D [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product/1", Response status code: 404 (e353595a)
+2024-01-20T22:12:46.9771420+01:00  [ERR] Unexpected exception in TimingPipeFlusher.FlushAsync. (423414c4)
+System.IO.IOException: The encryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (14): Bad address
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.FlushAsync(MinDataRate minRate, Int64 count, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteGoAwayAsync(Int32 lastStreamId, Http2ErrorCode errorCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.UpdateConnectionState()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsyncAwaited(ValueTask`1 flushTask, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.TimeFlushAsyncAwaited(ValueTask`1 pipeFlushTask, MinDataRate minRate, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+2024-01-20T22:12:47.0764130+01:00  [ERR] Unhandled exception while processing "0HN0PVGIC65VO". (42501bb7)
+System.IO.IOException: The encryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (14): Bad address
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.HttpConnection.ProcessRequestsAsync[TContext](IHttpApplication`1 httpApplication)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Threading.Tasks.UnwrapPromise`1.TrySetFromTask(Task task, Boolean lookForOce)
+   at System.Threading.Tasks.UnwrapPromise`1.Invoke(Task completingTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteToOutputPipe()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.KestrelConnection`1.ExecuteAsync()
+2024-01-20T22:12:53.2522610+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T22:14:35.6214970+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T22:14:35.6548270+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T22:14:35.6550510+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T22:14:35.6590890+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T22:14:35.6595540+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T22:14:35.6596320+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T22:14:42.0703080+01:00 0HN0PVJ8PFSS5:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - null null (d509f86a)
+2024-01-20T22:14:42.4817330+01:00 0HN0PVJ8PFSS5:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 414.1221ms (74253ad3)
+2024-01-20T22:14:43.8646170+01:00 0HN0PVJ8PFSS5:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-20T22:14:44.4023230+01:00 0HN0PVJ8PFSS5:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 537.6093ms (74253ad3)
+2024-01-20T22:14:54.3619690+01:00 0HN0PVJ8PFSS5:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - null null (d509f86a)
+2024-01-20T22:14:54.3651830+01:00 0HN0PVJ8PFSS5:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - 404 0 null 3.2362ms (74253ad3)
+2024-01-20T22:14:54.3687350+01:00 0HN0PVJ8PFSS5:00000013 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product/1", Response status code: 404 (e353595a)
+2024-01-20T22:17:34.5055100+01:00  [ERR] Unexpected exception in TimingPipeFlusher.FlushAsync. (423414c4)
+System.IO.IOException: The encryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (14): Bad address
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.FlushAsync(MinDataRate minRate, Int64 count, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteGoAwayAsync(Int32 lastStreamId, Http2ErrorCode errorCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.UpdateConnectionState()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsyncAwaited(ValueTask`1 flushTask, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.TimeFlushAsyncAwaited(ValueTask`1 pipeFlushTask, MinDataRate minRate, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+2024-01-20T22:17:34.5684130+01:00  [ERR] Unhandled exception while processing "0HN0PVJ8PFSS6". (42501bb7)
+System.IO.IOException: The encryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (14): Bad address
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.HttpConnection.ProcessRequestsAsync[TContext](IHttpApplication`1 httpApplication)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Threading.Tasks.UnwrapPromise`1.TrySetFromTask(Task task, Boolean lookForOce)
+   at System.Threading.Tasks.UnwrapPromise`1.Invoke(Task completingTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteToOutputPipe()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.KestrelConnection`1.ExecuteAsync()
+2024-01-20T22:20:11.2363440+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T22:20:38.0051460+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T22:20:38.0658910+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T22:20:38.0665450+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T22:20:38.0797340+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T22:20:38.0809210+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T22:20:38.0810700+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T22:31:02.0334870+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T22:31:36.8165710+01:00  [INF] Executed DbCommand ("97"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T22:31:37.0615220+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T22:31:37.8873210+01:00  [INF] Executed DbCommand ("607"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"__EFMigrationsHistory\" (
+    \"MigrationId\" character varying(150) NOT NULL,
+    \"ProductVersion\" character varying(32) NOT NULL,
+    CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY (\"MigrationId\")
+);" (0723d8ff)
+2024-01-20T22:31:37.8997470+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T22:31:37.9113930+01:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T22:31:37.9849420+01:00  [INF] Applying migration '"20240120211351_InitialCreate"'. (0e2ac64d)
+2024-01-20T22:31:38.2429000+01:00  [INF] Executed DbCommand ("202"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"Products\" (
+    \"Id\" integer GENERATED BY DEFAULT AS IDENTITY,
+    \"Name\" text,
+    \"Barcode\" text,
+    \"IsActive\" boolean,
+    \"Description\" text,
+    \"Rate\" numeric,
+    \"BuyingPrice\" numeric,
+    \"ConfidentialData\" text,
+    CONSTRAINT \"PK_Products\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-20T22:31:38.2718630+01:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"__EFMigrationsHistory\" (\"MigrationId\", \"ProductVersion\")
+VALUES ('20240120211351_InitialCreate', '8.0.0');" (0723d8ff)
+2024-01-20T22:31:39.7318740+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T22:31:39.7529760+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T22:31:39.7530890+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T22:31:39.7608550+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T22:31:39.7612770+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T22:31:39.7613680+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T22:32:54.4459310+01:00 0HN0PVTE7Q2QV:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - null null (d509f86a)
+2024-01-20T22:32:54.8569800+01:00 0HN0PVTE7Q2QV:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 412.7909ms (74253ad3)
+2024-01-20T22:32:57.0183130+01:00 0HN0PVTE7Q2QV:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-20T22:32:57.2833300+01:00 0HN0PVTE7Q2QV:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 264.8635ms (74253ad3)
+2024-01-20T22:33:20.1777590+01:00 0HN0PVTE7Q2QV:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - null null (d509f86a)
+2024-01-20T22:33:20.1809340+01:00 0HN0PVTE7Q2QV:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - 404 0 null 3.1436ms (74253ad3)
+2024-01-20T22:33:20.1873060+01:00 0HN0PVTE7Q2QV:00000013 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product/1", Response status code: 404 (e353595a)
+2024-01-20T22:33:40.7385630+01:00 0HN0PVTE7Q2QV:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T22:33:40.7397280+01:00 0HN0PVTE7Q2QV:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 1.1354ms (74253ad3)
+2024-01-20T22:33:40.7399370+01:00 0HN0PVTE7Q2QV:00000015 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T22:35:45.9621830+01:00  [ERR] Unexpected exception in TimingPipeFlusher.FlushAsync. (423414c4)
+System.IO.IOException: The encryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (14): Bad address
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.FlushAsync(MinDataRate minRate, Int64 count, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteGoAwayAsync(Int32 lastStreamId, Http2ErrorCode errorCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.UpdateConnectionState()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.ConcurrentPipeWriter.FlushAsyncAwaited(ValueTask`1 flushTask, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.PipeWriterHelpers.TimingPipeFlusher.TimeFlushAsyncAwaited(ValueTask`1 pipeFlushTask, MinDataRate minRate, IHttpOutputAborter outputAborter, CancellationToken cancellationToken)
+2024-01-20T22:35:45.9783630+01:00  [ERR] Unhandled exception while processing "0HN0PVTE7Q2R0". (42501bb7)
+System.IO.IOException: The encryption operation failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (14): Bad address
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.HttpConnection.ProcessRequestsAsync[TContext](IHttpApplication`1 httpApplication)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox box, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Threading.Tasks.UnwrapPromise`1.TrySetFromTask(Task task, Boolean lookForOce)
+   at System.Threading.Tasks.UnwrapPromise`1.Invoke(Task completingTask)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http2.Http2FrameWriter.WriteToOutputPipe()
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at System.IO.Pipelines.StreamPipeWriter.CompleteAsync(Exception exception)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStreamAdapter`1.DisposeAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.KestrelConnection`1.ExecuteAsync()
+2024-01-20T22:41:39.9254980+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T22:41:57.9050450+01:00  [INF] Executed DbCommand ("140"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T22:41:57.9886250+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T22:41:58.0662430+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T22:41:58.0858560+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T22:41:58.0883910+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T22:41:58.1248910+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T22:41:59.1918710+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T22:41:59.2256810+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T22:41:59.2260150+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T22:41:59.2342620+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T22:41:59.2345770+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T22:41:59.2346760+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T22:42:29.9463530+01:00 0HN0Q02PS30NL:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - null null (d509f86a)
+2024-01-20T22:42:30.1250140+01:00 0HN0Q02PS30NL:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 180.4978ms (74253ad3)
+2024-01-20T22:42:30.7933020+01:00 0HN0Q02PS30NL:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-20T22:42:31.0688480+01:00 0HN0Q02PS30NL:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 274.0873ms (74253ad3)
+2024-01-20T22:42:48.4254120+01:00 0HN0Q02PS30NL:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T22:42:48.4285140+01:00 0HN0Q02PS30NL:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 3.1688ms (74253ad3)
+2024-01-20T22:42:48.4335290+01:00 0HN0Q02PS30NL:00000013 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T22:59:47.8858800+01:00 0HN0Q02PS30NN:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T22:59:47.8871100+01:00 0HN0Q02PS30NN:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 1.2186ms (74253ad3)
+2024-01-20T22:59:47.8873790+01:00 0HN0Q02PS30NN:0000000F [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T23:00:13.7903620+01:00 0HN0Q02PS30NN:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T23:00:13.7916390+01:00 0HN0Q02PS30NN:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 1.1933ms (74253ad3)
+2024-01-20T23:00:13.7917710+01:00 0HN0Q02PS30NN:00000011 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T23:00:39.5189670+01:00 0HN0Q02PS30NN:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T23:00:39.5193090+01:00 0HN0Q02PS30NN:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 0.333ms (74253ad3)
+2024-01-20T23:00:39.5194410+01:00 0HN0Q02PS30NN:00000013 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T23:03:10.8360230+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T23:03:37.0283050+01:00  [INF] Executed DbCommand ("112"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:03:37.1378380+01:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:03:37.1763490+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:03:37.1902000+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:03:37.1928230+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:03:37.2382000+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:03:38.1811090+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T23:03:38.2164340+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T23:03:38.2168320+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T23:03:38.2235300+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T23:03:38.2238690+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T23:03:38.2240090+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T23:03:43.8960550+01:00 0HN0Q0ELH1ISL:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T23:03:43.9675600+01:00 0HN0Q0ELH1ISL:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 73.4692ms (74253ad3)
+2024-01-20T23:03:43.9699330+01:00 0HN0Q0ELH1ISL:0000000F [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T23:04:17.6382410+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T23:04:40.4695570+01:00  [INF] Executed DbCommand ("100"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:04:40.5787300+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:04:40.6157590+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:04:40.6252760+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:04:40.6279170+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:04:40.6724700+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:04:41.5172500+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T23:04:41.5541190+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T23:04:41.5543440+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T23:04:41.5605540+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T23:04:41.5609130+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T23:04:41.5610110+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T23:04:56.8041260+01:00 0HN0Q0FB6GSDD:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T23:04:56.9053600+01:00 0HN0Q0FB6GSDD:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 404 0 null 104.4946ms (74253ad3)
+2024-01-20T23:04:56.9084660+01:00 0HN0Q0FB6GSDD:0000000F [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:8084""""/api/Product", Response status code: 404 (e353595a)
+2024-01-20T23:06:37.9042270+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T23:07:02.3523750+01:00  [INF] Executed DbCommand ("96"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:07:02.4621360+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:07:02.4994450+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:07:02.5160230+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:07:02.5188340+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:07:02.5656510+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:09:29.9714750+01:00  [INF] Executed DbCommand ("130"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:09:30.1171790+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:09:30.1581300+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:09:30.1713270+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:09:30.1735800+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:09:30.2207220+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:09:31.2144620+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T23:09:31.2564090+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T23:09:31.2566030+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T23:09:31.2628390+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T23:09:31.2631990+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T23:09:31.2633020+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T23:09:47.3260730+01:00 0HN0Q0I1R78SR:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T23:09:47.4147640+01:00 0HN0Q0I1R78SR:0000000F [INF] Executing endpoint '"ProductController.GetAll (productService)"' (500cc934)
+2024-01-20T23:09:47.5070880+01:00 0HN0Q0I1R78SR:0000000F [INF] Route matched with "{action = \"GetAll\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll()" on controller "ProductController" ("productService"). (122b2fdf)
+2024-01-20T23:09:47.5446200+01:00 0HN0Q0I1R78SR:0000000F [INF] Find all products (af41a7d9)
+2024-01-20T23:09:48.4045020+01:00 0HN0Q0I1R78SR:0000000F [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"Barcode\", p.\"BuyingPrice\", p.\"ConfidentialData\", p.\"Description\", p.\"IsActive\", p.\"Name\", p.\"Rate\"
+FROM \"Products\" AS p" (0723d8ff)
+2024-01-20T23:09:48.4608610+01:00 0HN0Q0I1R78SR:0000000F [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Product, productService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2024-01-20T23:09:48.5323420+01:00 0HN0Q0I1R78SR:0000000F [INF] Executed action "ProductController.GetAll (productService)" in 1007.846ms (afa2e885)
+2024-01-20T23:09:48.5331970+01:00 0HN0Q0I1R78SR:0000000F [INF] Executed endpoint '"ProductController.GetAll (productService)"' (99874f2b)
+2024-01-20T23:09:48.5448300+01:00 0HN0Q0I1R78SR:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 200 null "application/json; charset=utf-8" 1220.6968ms (74253ad3)
+2024-01-20T23:10:20.3122400+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T23:10:36.9345440+01:00  [INF] Executed DbCommand ("143"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:10:37.0566190+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:10:37.1023090+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:10:37.1195850+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:10:37.1242890+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:10:37.1693300+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:11:06.3864570+01:00  [INF] Executed DbCommand ("101"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:11:06.4958620+01:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:11:06.5345900+01:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:11:06.5495580+01:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:11:06.5543830+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:11:06.5910980+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:11:31.3819910+01:00  [INF] Executed DbCommand ("128"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:11:31.4892980+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:11:31.5193630+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:11:31.5343200+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:11:31.5400020+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:11:31.5806670+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:11:32.7840950+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T23:11:32.8260590+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T23:11:32.8264370+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T23:11:32.8318020+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T23:11:32.8321190+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T23:11:32.8322360+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T23:14:38.8410600+01:00 0HN0Q0KONHQPB:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - null null (d509f86a)
+2024-01-20T23:14:39.0003920+01:00 0HN0Q0KONHQPB:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 160.6893ms (74253ad3)
+2024-01-20T23:14:39.7332010+01:00 0HN0Q0KONHQPB:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-01-20T23:14:39.9088520+01:00 0HN0Q0KONHQPB:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 175.4705ms (74253ad3)
+2024-01-20T23:14:46.9000230+01:00 0HN0Q0KONHQPB:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - null null (d509f86a)
+2024-01-20T23:14:46.9304610+01:00 0HN0Q0KONHQPB:00000013 [INF] Executing endpoint '"ProductController.GetAll (productService)"' (500cc934)
+2024-01-20T23:14:46.9624050+01:00 0HN0Q0KONHQPB:00000013 [INF] Route matched with "{action = \"GetAll\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll()" on controller "ProductController" ("productService"). (122b2fdf)
+2024-01-20T23:14:46.9661560+01:00 0HN0Q0KONHQPB:00000013 [INF] Find all products (af41a7d9)
+2024-01-20T23:14:47.6002780+01:00 0HN0Q0KONHQPB:00000013 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"Barcode\", p.\"BuyingPrice\", p.\"ConfidentialData\", p.\"Description\", p.\"IsActive\", p.\"Name\", p.\"Rate\"
+FROM \"Products\" AS p" (0723d8ff)
+2024-01-20T23:14:47.6701310+01:00 0HN0Q0KONHQPB:00000013 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Product, productService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2024-01-20T23:14:47.7098520+01:00 0HN0Q0KONHQPB:00000013 [INF] Executed action "ProductController.GetAll (productService)" in 739.0331ms (afa2e885)
+2024-01-20T23:14:47.7105460+01:00 0HN0Q0KONHQPB:00000013 [INF] Executed endpoint '"ProductController.GetAll (productService)"' (99874f2b)
+2024-01-20T23:14:47.7391200+01:00 0HN0Q0KONHQPB:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product""" - 200 null "application/json; charset=utf-8" 839.1327ms (74253ad3)
+2024-01-20T23:14:59.5884630+01:00 0HN0Q0KONHQPB:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - null null (d509f86a)
+2024-01-20T23:14:59.5893700+01:00 0HN0Q0KONHQPB:00000015 [INF] Executing endpoint '"ProductController.GetById (productService)"' (500cc934)
+2024-01-20T23:14:59.6556320+01:00 0HN0Q0KONHQPB:00000015 [INF] Route matched with "{action = \"GetById\", controller = \"Product\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32)" on controller "ProductController" ("productService"). (122b2fdf)
+2024-01-20T23:14:59.7071400+01:00 0HN0Q0KONHQPB:00000015 [INF] Get Product by id 1 (7d68a942)
+2024-01-20T23:15:00.3463340+01:00 0HN0Q0KONHQPB:00000015 [INF] Executed DbCommand ("36"ms) [Parameters=["@__query_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"Barcode\", p.\"BuyingPrice\", p.\"ConfidentialData\", p.\"Description\", p.\"IsActive\", p.\"Name\", p.\"Rate\"
+FROM \"Products\" AS p
+WHERE p.\"Id\" = @__query_Id_0
+LIMIT 1" (0723d8ff)
+2024-01-20T23:15:00.3520430+01:00 0HN0Q0KONHQPB:00000015 [INF] Executing "OkObjectResult", writing value of type '"null"'. (605b4265)
+2024-01-20T23:15:00.3523040+01:00 0HN0Q0KONHQPB:00000015 [INF] Executed action "ProductController.GetById (productService)" in 696.5423ms (afa2e885)
+2024-01-20T23:15:00.3523840+01:00 0HN0Q0KONHQPB:00000015 [INF] Executed endpoint '"ProductController.GetById (productService)"' (99874f2b)
+2024-01-20T23:15:00.3526370+01:00 0HN0Q0KONHQPB:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:8084""""/api/Product/1""" - 204 null null 764.433ms (74253ad3)
+2024-01-20T23:15:30.9699000+01:00  [INF] Application is shutting down... (90f52c38)
+2024-01-20T23:15:49.8839110+01:00  [INF] Executed DbCommand ("148"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:15:49.9882850+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:15:50.0185320+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:15:50.0367040+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)" (0723d8ff)
+2024-01-20T23:15:50.0440160+01:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-20T23:15:50.0853330+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-01-20T23:15:51.1407310+01:00  [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert. (f9d94507)
+2024-01-20T23:15:51.1973440+01:00  [INF] Now listening on: "https://localhost:8084" (d826f4b8)
+2024-01-20T23:15:51.1976350+01:00  [INF] Now listening on: "http://localhost:8081" (d826f4b8)
+2024-01-20T23:15:51.2523240+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-20T23:15:51.2597440+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-01-20T23:15:51.2599540+01:00  [INF] Content root path: "/Users/florentkemdjeukeng/Downloads/ASP Tutorials/asp-microservices/productService" (cc26f24e)
+2024-01-20T23:29:06.8108730+01:00  [INF] Application is shutting down... (90f52c38)

@@ -1,0 +1,48 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/order-service/weatherforecast",
+            "UpstreamHttpMethod": ["Get"],
+            "DownstreamPathTemplate": "/weatherforecast",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [{
+                "Host": "localhost",
+                "Port": 8083
+            }],
+            "DangerousAcceptAnyServerCertificateValidator": true
+        },
+        {
+            "UpstreamPathTemplate": "/product-service/product/{id}",
+            "UpstreamHttpMethod": ["Get", "Delete"],
+            "DownstreamPathTemplate": "/api/product/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [{
+                "Host": "localhost",
+                "Port": 8084
+            }],
+            "DangerousAcceptAnyServerCertificateValidator": true
+        },
+        {
+            "UpstreamPathTemplate": "/product-service/product",
+            "UpstreamHttpMethod": ["Post", "Put"],
+            "DownstreamPathTemplate": "/api/product",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [{
+                "Host": "localhost",
+                "Port": 8084
+            }],
+            "DangerousAcceptAnyServerCertificateValidator": true
+        },
+        {
+            "UpstreamPathTemplate": "/product-service/product",
+            "UpstreamHttpMethod": ["Get"],
+            "DownstreamPathTemplate": "/api/product",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [{
+                "Host": "localhost",
+                "Port": 8084
+            }],
+            "DangerousAcceptAnyServerCertificateValidator": true
+        }
+    ]
+}
